@@ -1,0 +1,2 @@
+SET nome "Teste"
+GET nome
