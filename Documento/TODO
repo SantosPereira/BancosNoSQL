@@ -1,0 +1,17 @@
+[LEGENDA] => {
+    $ : Tarefa,
+    & : Sub-tarefa,
+    # : Concluída
+}
+
+# Migrar a base de dados
+
+$ Realizar um CRUD geral
+& Cadastrar documentos (insertOne( ) e insertMany( ))
+& Atualizar valores em documentos específicos (updateOne( ), updateMany( ) e replaceOne( ))
+& Deletar documentos baseados em alguma condição(deleteOne( ) e deleteMany( ))
+& Selecionar dados (Find( )) 
+
+$ Projeção simples
+
+[...]
