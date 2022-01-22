@@ -21,3 +21,12 @@ hmset album5 idArtista5 idMusica5 nome "Más" anoLançamento "1997"
 ===========================================================================================================================
 
 O artista 4 está sem nacionalidade propositalmente e o musica2 está sem musica propositalmente também
+
+===========================================================================================================================
+
+
+=================================================Comandos===================================================================
+
+//Conferir todos os dados do artista1: hgetall artista3
+
+
