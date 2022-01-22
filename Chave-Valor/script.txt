@@ -6,14 +6,14 @@ hmset artista3 id 3 nome "Shakira" data_nasc "1977-02-02" nacionalidade "Colombi
 hmset artista4 id 4 nome "Ed sheeran" data_nasc "1991-02-17" 
 hmset artista5 id 5 nome "Alejandro Sanz" data_nasc "1968-12-18" nacionalidade "Espanhol"
 
-hmset musica1 id 6 titulo "Anunciação" compositor "Alceu Valença" ano "1983" duração "06:04"
-hmset musica2 id 7 titulo "Burning love" compositor "elvis presley" ano "1972" 
-hmset musica3 id 8 titulo  "La La La" compositor "Shakira" ano "2014" duração "03:33"
-hmset musica4 id 9 titulo "Dive" compositor "Ed sheeran" ano "2017" duração "03:00"
-hmset musica5 id 10 titulo "Esa Mujer" compositor "Alejandro Sanz" ano "2018" duração "03:20"
+hmset musica1 id 6 titulo "Anunciação" compositor "artista1" ano "1983" duração "06:04"
+hmset musica2 id 7 titulo "Burning love" compositor "artista2" ano "1972" 
+hmset musica3 id 8 titulo  "La La La" compositor "artista3" ano "2004" duração "03:33"
+hmset musica4 id 9 titulo "Dive" compositor "artista4" ano "2017" duração "03:00"
+hmset musica5 id 10 titulo "Esa Mujer" compositor "artista5" ano "2018" duração "03:20"
 
 hmset album1 idArtista1 idMusica1 nome "Vivo!" anoLançamento "1976"
-hmset album2 idArtista2 idMusica2 nome "Today" anolançamento "1975"
+hmset album2 idArtista2 idMusica2 nome "Toda" anolançamento "1975"
 hmset album3 idArtista3 idMusica3 nome "She wolf" anoLançamento "2009"
 hmset album4 idArtista4 idMusica4 nome "the orange room" anoLançamento "2005"
 hmset album5 idArtista5 idMusica5 nome "Más" anoLançamento "1997"
@@ -28,5 +28,24 @@ O artista 4 está sem nacionalidade propositalmente e o musica2 está sem musica
 =================================================Comandos===================================================================
 
 //Conferir todos os dados do artista1: hgetall artista3
+
+//A nacionalidade do artista2 não é mais necessaria: hdel artista2 nacionalidade
+
+//O artista 4 foi cadastrado errado e precisa da sua nacinalidade e a musica2 está sem a sua duração: hsetnx artista4 nacionalidade "Britanico"/ hsetnx musica2 duração: hsetnx musica2 duração "03:14"
+
+//Verificar quantas keys o artista4 agora tem depois da atualização: hlen artista4
+
+//Verificar o nome das keys do artista4: hkeys artista4
+
+//O nome do album2 foi digitado errado, precisa ser alterado: hmset album2 nome "today" (lembrete: demitir esse funcionario)
+
+//Verificar se o album2 tem mais algum erro: HEXISTS album2 nome
+
+//Trazer os dados cadastrados apenas de album2 : HVALS album2
+
+//A musica la la la da shakira foi colocada com a data de 2004 e precisa ser alterada para 2014: HINCRBY musica3 ano 10
+
+//
+
 
 
