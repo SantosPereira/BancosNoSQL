@@ -21,3 +21,29 @@ hmset album5 idArtista5 idMusica5 nome "Más" anoLançamento "1997"
 ===========================================================================================================================
 
 O artista 4 está sem nacionalidade propositalmente e o musica2 está sem musica propositalmente também
+
+===========================================================================================================================
+
+
+=================================================Comandos===================================================================
+
+//Conferir todos os dados do artista1: hgetall artista3
+
+//A nacionalidade do artista2 não é mais necessaria: hdel artista2 nacionalidade
+
+//O artista 4 foi cadastrado errado e precisa da sua nacinalidade e a musica2 está sem a sua duração: hsetnx artista4 nacionalidade "Britanico"/ hsetnx musica2 duração: hsetnx musica2 duração "03:14"
+
+//Verificar quantas keys o artista4 agora tem depois da atualização: hlen artista4
+
+//Verificar o nome das keys do artista4: hkeys artista4
+
+//O nome do album2 foi digitado errado, precisa ser alterado: hmset album2 nome "today" (lembrete: demitir esse funcionario)
+
+//Verificar se o album2 tem mais algum erro: HEXISTS album2 nome
+
+//Trazer os dados cadastrados apenas de album2 : HVALS album2
+
+//A musica la la la da shakira foi colocada com a data de 2004 e precisa ser alterada para 2014: HINCRBY musica3 ano 10
+
+//
+
