@@ -13,7 +13,7 @@ CREATE (p5:Professor{nome:"Carlos José", idade:40, formacao: "Design Gráfico"}
 
 
 // ADS 3º
-CREATE (c1:Curso{nome:"ADS", nomeCoordenador: "$ PREENCHER AQUI"}, periodo: "3º")
+CREATE (c1:Curso{nome:"ADS", nomeCoordenador: "$ PREENCHER AQUI", periodo: "3º"})
 
 CREATE (d1:Disciplina{nome:"Programação Orientada a Objetos" , ch:"$ PREENCHER AQUI"})
 CREATE (d2:Disciplina{nome:"Inteligência Artificial" , ch:"$ PREENCHER AQUI"})
@@ -31,7 +31,6 @@ CREATE (d7:Disciplina{nome: "Interface Humano-Computador", ch: "$ PREENCHER AQUI
 
 
 // ---------------------- Relacionamentos ------------------------------------------------------------
-ads:
 
 create (p2)-[:ministra{turno:'noite'}]->(d1)
 create (p2)-[:ministra{turno:'noite'}]->(d2)
