@@ -47,5 +47,8 @@ O artista 4 está sem nacionalidade propositalmente e o musica2 está sem musica
 
 //
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 73ec51834cb1aae89899475f79f69457b402ce3f
