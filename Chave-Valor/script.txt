@@ -1,3 +1,5 @@
+Grupo: Wendel isaac, Pedro pereira e Carlos Eduardo
+
 ======================================================Dados============================
 
 hmset artista1 id 1 nome "Alceu valença" data_nasc "1946-07-01" nacionalidade "Brasileiro"

@@ -1,31 +1,33 @@
-// Criação da base de dados
+
+//Grupo: Wendel Isaac, Pedro pereira e Carlos Eduardo
+// Criaï¿½ï¿½o da base de dados
 use AttGrupo
 db.createCollection("Album")
 db.Album.insertMany(
     [
         {
-            nome: "Zé Ramalho ao vivo",
-            tipo: "Físico",
+            nome: "Zï¿½ Ramalho ao vivo",
+            tipo: "Fï¿½sico",
             ano: 2005,
             artista: [
                 {
-                    nome: "Zé Ramalho",
+                    nome: "Zï¿½ Ramalho",
                     dataNasc: new Date("1949-10-03"),
                     nascionalidade: "Brasileiro"
                 }
             ],
             faixas: [
                 {
-                    titulo: "Chão de Giz",
-                    compositor: "Zé Ramalho",
+                    titulo: "Chï¿½o de Giz",
+                    compositor: "Zï¿½ Ramalho",
                     ano: 1978,
                     duracao: "04:33"
                 },
             ]
         },
         {
-            nome: "Na Pressão",
-            tipo: "Físico",
+            nome: "Na Pressï¿½o",
+            tipo: "Fï¿½sico",
             ano: 1999,
             plataforma: [
                 {
@@ -46,7 +48,7 @@ db.Album.insertMany(
             ]
         },
         {
-            nome: "Amor Sin Límite",
+            nome: "Amor Sin Lï¿½mite",
             tipo: "Digital",
             idArtista: 6,
             plataforma: [
@@ -79,7 +81,7 @@ db.Album.insertMany(
             ],
             artista: [
                 {
-                    nome: "Alceu Valença",
+                    nome: "Alceu Valenï¿½a",
                     dataNasc: new Date("1946-07-01"),
                     nascionalidade: "Brasileiro"
                 },
@@ -96,13 +98,13 @@ db.Album.insertMany(
             faixas: [
                 {
                     titulo: "Anunciacao",
-                    compositor: "Alceu Valença",
+                    compositor: "Alceu Valenï¿½a",
                     ano: 1983,
                     duracao: "06:04"
                 },
                 {
                     titulo: "Frevo Mulher",
-                    compositor: "Zé Ramalho",
+                    compositor: "Zï¿½ Ramalho",
                     ano: 1979
                 },
                 {
@@ -113,11 +115,11 @@ db.Album.insertMany(
                 },
                 {
                     titulo: "Forro de Olinda",
-                    compositor: "Alceu Valença"
+                    compositor: "Alceu Valenï¿½a"
                 },
                 {
-                    titulo: "Chão de Giz",
-                    compositor: "Zé Ramalho",
+                    titulo: "Chï¿½o de Giz",
+                    compositor: "Zï¿½ Ramalho",
                     ano: 1978,
                     duracao: "04:33"
                 },
@@ -127,7 +129,7 @@ db.Album.insertMany(
                     duracao: "03:00"
                 },
                 {
-                    titulo: "Paciência",
+                    titulo: "Paciï¿½ncia",
                     compositor: "Lenine",
                     ano: 1999,
                     duracao: "03:37"
