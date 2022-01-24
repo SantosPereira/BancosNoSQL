@@ -1,16 +1,16 @@
 use AttGrupo
-
+//Grupo: Wendel Isaac, Pedro Pereira e Carlos Eduardo
 db.Album.insertOne(
     {
         nome: "Anjo Avesso",
-        tipo: "Fí­sico",
+        tipo: "FÃ­Â­sico",
         ano: 1983,
         plataforma: [
         ],
         faixas: [
             {
                 titulo: "Anunciacao",
-                compositor: "Alceu Valença",
+                compositor: "Alceu ValenÃ§a",
                 ano: 1983,
                 duracao: "06:04"
             }
@@ -27,12 +27,12 @@ db.Album.insertMany(
     [
         {
             nome: "Da Lama ao Caos",
-            tipo: "Físico",
+            tipo: "FÃ­sico",
             ano: 1994,
             plataforma: [],
             faixas: [
                 {
-                    titulo: "Monólogo ao Pé do Ouvido",
+                    titulo: "MonÃ³logo ao PÃ© do Ouvido",
                     ano: 1994,
                     duracao: "01:07"
                 },
@@ -46,7 +46,7 @@ db.Album.insertMany(
         },
         {
             nome: "Afrociberdelia",
-            tipo: "Físico",
+            tipo: "FÃ­sico",
             ano: 1996,
             plataforma: [],
             faixas: [
@@ -56,7 +56,7 @@ db.Album.insertMany(
                     duracao: "02:12"
                 },
                 {
-                    titulo: "Criança de Domingo",
+                    titulo: "CrianÃ§a de Domingo",
                     ano: 1896,
                     duracao: "03:28"
                 }
@@ -81,8 +81,8 @@ db.Album.insertOne(
 db.Album.replaceOne(
     { nome: "sem nome" },
     {
-        nome: "O Furacão é Show",
-        tipo: "Físico",
+        nome: "O FuracÃ£o Ã© Show",
+        tipo: "FÃ­sico",
         ano: 2009,
         plataforma: [
             {
@@ -96,7 +96,7 @@ db.Album.replaceOne(
 
 db.Album.deleteOne(
     {
-        nome: "Amor Sin Límite"
+        nome: "Amor Sin LÃ­mite"
     }
 )
 
