@@ -1,5 +1,5 @@
 //Script
-Grupo: Wendel Isaac, Carlos Eduardo, Pedro Pereira
+//Grupo: Wendel Isaac, Carlos Eduardo, Pedro Pereira
 // ---------------------- Nós ----------------------------------------------------------------------
 
 // Professores
